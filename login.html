@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,23 +10,30 @@
 
   <body>
     <div class="login-box">
-      <h2>Login</h2>
-      <form action="">
+      <h2>Login Form</h2>
+      <form id="loginForm">
         <div class="user-box">
-          <input type="text" required />
-          <label for="">user name</label>
+          <input type="email" id="email" required />
+          <label for="email">Email</label>
         </div>
         <div class="user-box">
-          <input type="password" required />
-          <label for="">password</label>
+          <input type="password" id="password" required />
+          <label for="password">Password</label>
         </div>
-        <a href="">
+        <a href="#" id="submitBtn">
           <span></span>
           <span></span>
           <span></span>
-          <span></span>submit
+          <span></span>Submit
         </a>
+        <p
+          id="errorMessage"
+          style="color: red; display: none; margin-top: 20px"
+        >
+          Invalid email or password
+        </p>
       </form>
     </div>
+    <script src="sc.js"></script>
   </body>
 </html>
